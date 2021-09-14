@@ -10,9 +10,19 @@ export default [
     component: () => import('@/pages/throttle'),
   },
   {
-    path: '/syntax/async',
-    title: '异步执行先后测试',
-    component: () => import('@/pages/async'),
+    path: '/syntax/sync/promise',
+    title: 'js同步方案-promise',
+    component: () => import('@/pages/sync/promise'),
+  },
+  {
+    path: '/syntax/sync/await',
+    title: 'js同步方案-await',
+    component: () => import('@/pages/sync/await'),
+  },
+  {
+    path: '/syntax/sync/genarator',
+    title: 'js同步方案-genarator',
+    component: () => import('@/pages/sync/genarator'),
   },
   {
     path: '/syntax/algorithm',
