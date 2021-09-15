@@ -13,16 +13,8 @@ module.exports = function (api) {
       },
     ], '@babel/preset-react']
   const plugins = [
-    [
-      '@babel/plugin-transform-runtime',
-      // {
-      //   "absoluteRuntime": false,
-      //   "corejs": false,
-      //   "helpers": true,
-      //   "regenerator": true,
-      //   "version": "7.0.0-beta.0"
-      // }
-    ],
+    ['@babel/plugin-transform-runtime'],
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
   ]
 
   return {
